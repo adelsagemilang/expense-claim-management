@@ -132,7 +132,6 @@ export class ClaimFormComponent {
   closeDialog() {
     this.isOpenModal = false;
     this.form.reset();
-    console.log(this.form.value)
   }
 
   initForm() {

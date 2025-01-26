@@ -24,14 +24,12 @@ export class ClaimComponent {
   selectedClaim?: Claim | null = null;
 
   openClaimForm(item?: Claim) {
-    console.log('clain', item)
     if (item) this.selectedClaim = item;
 
     this.claimFormComponent.showDialog();
   }
 
   updateClaimTable() {
-    console.log('here')
     this.claimTableComponent.getData();
   }
 }
