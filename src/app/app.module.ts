@@ -2,18 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { HttpClientModule } from '@angular/common/http';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppRoutingModule } from '@app/app-routing.module';
+import { AppComponent } from '@app/app.component';
+import { ClaimComponent } from '@app/claim/claim.component';
 
 import { InMemoryDataService } from '@app/shared/services/in-memory-data.service';
 
-// Claim Management
-import { ClaimComponent } from '@app/claim/claim.component';
-import { ClaimService } from '@app/claim/claim.service';
 
-import { EmployeeService } from '@app/employee/employee.service';
-import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -30,10 +27,6 @@ import { HttpClientModule } from '@angular/common/http';
       { dataEncapsulation: false }
     ),
     ClaimComponent,
-  ],
-  providers: [
-    ClaimService,
-    EmployeeService
   ],
   bootstrap: [AppComponent],
 })
