@@ -1,0 +1,78 @@
+:host ::ng-deep {
+  .p-dropdown,
+  .p-inputnumber,
+  .p-inputwrapper {
+    width: 100%;
+  }
+
+  label {
+    width: 30%;
+    text-align: right;
+    margin-right: 24px;
+  }
+
+  p-dropdown,
+  .p-inputtext,
+  .p-inputwrapper,
+  .form-input-file,
+  .p-inputgroup {
+    flex: 1;
+  }
+
+  .p-inputwrapper {
+    &.flex-none {
+      width: 220px;
+    }
+  }
+
+  .p-disabled:not(p-button) {
+    opacity: 1;
+    cursor: not-allowed;
+  }
+
+  .p-inputgroup {
+    .p-inputnumber-input {
+      flex: unset;
+      width: auto;
+    }
+  }
+
+  p-calendar {
+    &.p-inputwrapper {
+      width: auto;
+      display: contents;
+    }
+
+    + .p-inputgroup-addon {
+      background-color: var(--green-500);
+      color: white;
+      border-color: var(--green-500);
+    }
+    input {
+      border-right: unset;
+      border-top-right-radius: unset;
+      border-bottom-right-radius: unset;
+    }
+  } 
+
+
+  .p-datepicker {
+    .p-datepicker-header {
+      padding: 0.2rem;
+    }
+
+    table {
+      font-size: 10pt;
+      margin: -0.143rem 0;
+
+      td {
+        padding: 0.2rem !important;
+
+        > span {
+          width: 1.7rem;
+          height: 1.7rem;
+        }
+      }
+    }
+  }
+}

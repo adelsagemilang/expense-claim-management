@@ -1,0 +1,11 @@
+<div class="surface-section py-4 md:py-8 px-4 md:px-8">
+  <div class="flex justify-content-between align-items-center mb-4">
+    <h4 class="page-title">Claim List</h4>
+
+    <p-button label="Create claim" icon="pi pi-plus" size="small" (click)="openClaimForm()" />
+  </div>
+
+  <claim-table (onUpdate)="openClaimForm($event)" />
+
+  <claim-form [claim]="selectedClaim" (onUpdate)="updateClaimTable()" />
+</div>

@@ -1,0 +1,119 @@
+<p-toast></p-toast>
+
+<p-dialog 
+  [(visible)]="isOpenModal" 
+  [modal]="true" 
+  [style]="{ width: '45vw' }" 
+  [draggable]="false" 
+  [resizable]="false"
+  (onHide)="closeDialog()"
+> 
+  <ng-template pTemplate="header">
+    <h4 class="page-title">Create Claim</h4>
+  </ng-template>
+  <ng-template pTemplate="closeicon">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 0.375C18.4219 0.375 23.625 5.57812 23.625 12C23.625 18.4219 18.4219 23.625 12 23.625C5.57812 23.625 0.375 18.4219 0.375 12C0.375 5.57812 5.57812 0.375 12 0.375ZM12 21.375C17.1562 21.375 21.375 17.2031 21.375 12C21.375 6.84375 17.1562 2.625 12 2.625C6.79688 2.625 2.625 6.84375 2.625 12C2.625 17.2031 6.79688 21.375 12 21.375ZM16.7344 9.09375L13.8281 12L16.7344 14.9531C16.9688 15.1406 16.9688 15.5156 16.7344 15.75L15.7031 16.7812C15.4688 17.0156 15.0938 17.0156 14.9062 16.7812L12 13.875L9.04688 16.7812C8.85938 17.0156 8.48438 17.0156 8.25 16.7812L7.21875 15.75C6.98438 15.5156 6.98438 15.1406 7.21875 14.9531L10.125 12L7.21875 9.09375C6.98438 8.90625 6.98438 8.53125 7.21875 8.29688L8.25 7.26562C8.48438 7.03125 8.85938 7.03125 9.04688 7.26562L12 10.1719L14.9062 7.26562C15.0938 7.03125 15.4688 7.03125 15.7031 7.26562L16.7344 8.29688C16.9688 8.53125 16.9688 8.90625 16.7344 9.09375Z" fill="#2E4155"/>
+    </svg>
+  </ng-template>
+  <ng-template pTemplate="content">
+    <form [formGroup]="form">
+      <div class="flex flex-column gap-4">
+        <div class="flex gap-2 min-w-full justify-content-end align-items-center border-bottom-1 border-color border-400 pb-4">
+          <form-label for="employee" [formGroup]="form">Employee</form-label>
+
+          <p-dropdown formControlName="employee" [options]="employees" optionLabel="name" placeholder="-- Please select --"></p-dropdown>
+        </div>
+
+        <div class="flex gap-2 min-w-full justify-content-end align-items-center">
+          <form-label for="reportName" [formGroup]="form">Report name</form-label>
+
+          <input type="text" pInputText formControlName="reportName" placeholder="Eg: My expense" />
+        </div>
+
+        <div class="flex gap-2 min-w-full justify-content-end align-items-center">
+          <form-label for="claimType" [formGroup]="form">Claim type</form-label>
+
+          <p-dropdown formControlName="claimType" [options]="claimTypes" optionLabel="name" placeholder="-- Please select --"></p-dropdown>
+        </div>
+
+        <div class="flex gap-2 min-w-full justify-content-end align-items-center">
+          <form-label for="attachments" [formGroup]="form">Attachments</form-label>
+
+          <form-input-file [formControlName]="'attachments'">Click here to upload</form-input-file>
+        </div>
+
+        <div *ngIf="isClaimTypeMeals()" class="flex gap-2 min-w-full justify-content-end align-items-center">
+          <form-label for="transactionDate" [formGroup]="form">Transaction date</form-label>
+
+          <div class="p-inputgroup">
+            <p-calendar formControlName="transactionDate" placeholder="Select date"></p-calendar>
+            <span class="p-inputgroup-addon">
+              <span class="pi pi-calendar"></span>
+            </span>
+          </div>
+        </div>
+
+        <ng-container *ngIf="isClaimTypeTravelAllowance()">
+          <div class="flex gap-2 min-w-full justify-content-end align-items-center">
+            <form-label for="startDate" [formGroup]="form">Start date</form-label>
+
+            <div class="p-inputgroup">
+              <p-calendar formControlName="startDate" placeholder="Select date"></p-calendar>
+              <span class="p-inputgroup-addon">
+                <span class="pi pi-calendar"></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="flex gap-2 min-w-full justify-content-end align-items-center">
+            <form-label for="endDate" [formGroup]="form">End date</form-label>
+
+            <div class="p-inputgroup">
+              <p-calendar formControlName="endDate" placeholder="Select date" [minDate]="minEndDate()" />
+              <span class="p-inputgroup-addon">
+                <span class="pi pi-calendar"></span>
+              </span>
+            </div>
+          </div>
+
+          <div class="flex gap-2 min-w-full justify-content-end align-items-center">
+            <form-label for="numberOfDays" [formGroup]="form">Number of days</form-label>
+
+            <div class="flex align-items-center flex-1 gap-2">
+              <p-inputNumber formControlName="numberOfDays" class="flex-none" /> 
+              <span>{{ form.get('numberOfDays')?.value || 0 }} x RM{{ AMOUNT_PER_DAY }}/day</span>
+            </div>
+          </div>
+        </ng-container>
+
+        <div class="flex gap-2 min-w-full justify-content-end align-items-center">
+          <form-label for="totalAmount" [formGroup]="form">Total amount</form-label>
+
+          <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">RM</span> 
+            <p-inputNumber formControlName="totalAmount" placeholder="0.00" mode="decimal" [minFractionDigits]="2" [maxFractionDigits]="2" locale="en-US" />
+          </div>
+        </div>
+
+        <ng-container *ngFor="let item of customFields; let i = index">
+          <div class="flex gap-2 min-w-full justify-content-end align-items-center" [ngClass]="{'border-top-1 border-color border-400 pt-4': i === 0}">
+            <form-label [formGroup]="form" [for]="item.key">{{ item.label }}</form-label>
+
+            <p-inputNumber *ngIf="item.type === 'NUMBER'; else elseBlock" [formControlName]="item.key" />    
+            <ng-template #elseBlock>
+              <input type="text" pInputText [formControlName]="item.key" />
+            </ng-template>
+          </div>
+        </ng-container>
+      </div>
+    </form>
+    <!-- {{ form.value | json }} -->
+  </ng-template>
+  <ng-template pTemplate="footer">
+    <div class="flex gap-1 justify-content-end pt-4">
+      <p-button label="Cancel" size="small" [outlined]="true" (click)="closeDialog()" />
+      <p-button label="Save" size="small" [disabled]="!form.valid" (click)="submit()" />
+    </div>
+  </ng-template>
+</p-dialog>

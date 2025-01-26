@@ -1,0 +1,853 @@
+[
+  {
+      "id": "123e4567-e89b-12d3-a456-4266141740001",
+      "employeeId": "600b9f09f559ab00072b9508",
+      "reportName": "Report 1",
+      "claimTypeId": "d3b07384-d9a1-4f3b-8a1d-2b9b8a5e6f7e",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        }
+      ],
+      "transactAt": "2025-01-25T15:46:59.204Z",
+      "startDate": "2025-01-25T15:46:59.204Z",
+      "endDate": "2025-01-26T15:46:59.204Z",
+      "numberOfDays": 0,
+      "claimAmount": 37.89,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-1",
+              "label": "Field Label 1",
+              "type": "TEXT",
+              "value": "Value 1"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-2",
+              "label": "Field Label 2",
+              "type": "NUMBER",
+              "value": 24
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-4266141740002",
+      "employeeId": "601377e5d23ffd00070514a8",
+      "reportName": "Report 2",
+      "claimTypeId": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "claimAmount": 98.9,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-2",
+              "label": "Field Label 2",
+              "type": "TEXT",
+              "value": "Value 2"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-3",
+              "label": "Field Label 3",
+              "type": "NUMBER",
+              "value": 13
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-4266141740003",
+      "employeeId": "5db159895154630031f898aa",
+      "reportName": "Report 3",
+      "claimTypeId": "d3b07384-d9a1-4f3b-8a1d-2b9b8a5e6f7e",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "transactAt": "2025-01-25T15:46:59.204Z",
+      "claimAmount": 584.22,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-3",
+              "label": "Field Label 3",
+              "type": "TEXT",
+              "value": "Value 3"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-4",
+              "label": "Field Label 4",
+              "type": "NUMBER",
+              "value": 38
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-4266141740004",
+      "employeeId": "5db159895154630031f898af",
+      "reportName": "Report 4",
+      "claimTypeId": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "startDate": "2025-01-22T15:46:59.204Z",
+      "endDate": "2025-01-23T15:46:59.204Z",
+      "numberOfDays": 3,
+      "claimAmount": 294.18,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-4",
+              "label": "Field Label 4",
+              "type": "TEXT",
+              "value": "Value 4"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-5",
+              "label": "Field Label 5",
+              "type": "NUMBER",
+              "value": 14
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-4266141740005",
+      "employeeId": "6004d40c0922e40007b7c4c0",
+      "reportName": "Report 5",
+      "claimTypeId": "d3b07384-d9a1-4f3b-8a1d-2b9b8a5e6f7e",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "transactAt": "2025-01-25T15:46:59.204Z",
+      "claimAmount": 312.12,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-5",
+              "label": "Field Label 5",
+              "type": "TEXT",
+              "value": "Value 5"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-6",
+              "label": "Field Label 6",
+              "type": "NUMBER",
+              "value": 91
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-4266141740006",
+      "employeeId": "608d196635717600079a0990",
+      "reportName": "Report 6",
+      "claimTypeId": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "claimAmount": 588.27,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-6",
+              "label": "Field Label 6",
+              "type": "TEXT",
+              "value": "Value 6"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-7",
+              "label": "Field Label 7",
+              "type": "NUMBER",
+              "value": 48
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-4266141740007",
+      "employeeId": "5db15ca15154630031f89941",
+      "reportName": "Report 7",
+      "claimTypeId": "d3b07384-d9a1-4f3b-8a1d-2b9b8a5e6f7e",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "transactAt": "2025-01-25T15:46:59.204Z",
+      "startDate": "2025-01-19T15:46:59.204Z",
+      "endDate": "2025-01-20T15:46:59.204Z",
+      "numberOfDays": 6,
+      "claimAmount": 634.12,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-7",
+              "label": "Field Label 7",
+              "type": "TEXT",
+              "value": "Value 7"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-8",
+              "label": "Field Label 8",
+              "type": "NUMBER",
+              "value": 94
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-4266141740008",
+      "employeeId": "5db15ca15154630031f89946",
+      "reportName": "Report 8",
+      "claimTypeId": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "claimAmount": 757.9,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-8",
+              "label": "Field Label 8",
+              "type": "TEXT",
+              "value": "Value 8"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-9",
+              "label": "Field Label 9",
+              "type": "NUMBER",
+              "value": 26
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-4266141740009",
+      "employeeId": "5db15ca15154630031f89950",
+      "reportName": "Report 9",
+      "claimTypeId": "d3b07384-d9a1-4f3b-8a1d-2b9b8a5e6f7e",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "transactAt": "2025-01-25T15:46:59.205Z",
+      "claimAmount": 614.7,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-9",
+              "label": "Field Label 9",
+              "type": "TEXT",
+              "value": "Value 9"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-10",
+              "label": "Field Label 10",
+              "type": "NUMBER",
+              "value": 95
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-42661417400010",
+      "employeeId": "5db15ca25154630031f89955",
+      "reportName": "Report 10",
+      "claimTypeId": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "startDate": "2025-01-16T15:46:59.205Z",
+      "endDate": "2025-01-17T15:46:59.205Z",
+      "numberOfDays": 9,
+      "claimAmount": 0.64,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-10",
+              "label": "Field Label 10",
+              "type": "TEXT",
+              "value": "Value 10"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-11",
+              "label": "Field Label 11",
+              "type": "NUMBER",
+              "value": 12
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-42661417400011",
+      "employeeId": "5db1593c5154630031f89876",
+      "reportName": "Report 11",
+      "claimTypeId": "d3b07384-d9a1-4f3b-8a1d-2b9b8a5e6f7e",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "transactAt": "2025-01-25T15:46:59.205Z",
+      "claimAmount": 949.83,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-11",
+              "label": "Field Label 11",
+              "type": "TEXT",
+              "value": "Value 11"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-12",
+              "label": "Field Label 12",
+              "type": "NUMBER",
+              "value": 8
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-42661417400012",
+      "employeeId": "603ce29bb5715a00077b23d5",
+      "reportName": "Report 12",
+      "claimTypeId": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "claimAmount": 195.75,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-12",
+              "label": "Field Label 12",
+              "type": "TEXT",
+              "value": "Value 12"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-13",
+              "label": "Field Label 13",
+              "type": "NUMBER",
+              "value": 89
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-42661417400013",
+      "employeeId": "60a7558a93d194000751ef01",
+      "reportName": "Report 13",
+      "claimTypeId": "d3b07384-d9a1-4f3b-8a1d-2b9b8a5e6f7e",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "transactAt": "2025-01-25T15:46:59.205Z",
+      "startDate": "2025-01-13T15:46:59.205Z",
+      "endDate": "2025-01-14T15:46:59.205Z",
+      "numberOfDays": 12,
+      "claimAmount": 971,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-13",
+              "label": "Field Label 13",
+              "type": "TEXT",
+              "value": "Value 13"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-14",
+              "label": "Field Label 14",
+              "type": "NUMBER",
+              "value": 72
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-42661417400014",
+      "employeeId": "60a8c688e25fda0007d6ad6b",
+      "reportName": "Report 14",
+      "claimTypeId": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "claimAmount": 946.01,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-14",
+              "label": "Field Label 14",
+              "type": "TEXT",
+              "value": "Value 14"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-15",
+              "label": "Field Label 15",
+              "type": "NUMBER",
+              "value": 81
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-42661417400015",
+      "employeeId": "6103b6ee05d3e30007175dab",
+      "reportName": "Report 15",
+      "claimTypeId": "d3b07384-d9a1-4f3b-8a1d-2b9b8a5e6f7e",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "transactAt": "2025-01-25T15:46:59.205Z",
+      "claimAmount": 403.35,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-15",
+              "label": "Field Label 15",
+              "type": "TEXT",
+              "value": "Value 15"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-16",
+              "label": "Field Label 16",
+              "type": "NUMBER",
+              "value": 51
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-42661417400016",
+      "employeeId": "610a25798c883f00070d26f3",
+      "reportName": "Report 16",
+      "claimTypeId": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "startDate": "2025-01-10T15:46:59.205Z",
+      "endDate": "2025-01-11T15:46:59.205Z",
+      "numberOfDays": 15,
+      "claimAmount": 34.78,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-16",
+              "label": "Field Label 16",
+              "type": "TEXT",
+              "value": "Value 16"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-17",
+              "label": "Field Label 17",
+              "type": "NUMBER",
+              "value": 78
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-42661417400017",
+      "employeeId": "616d421b4d27020007749cb6",
+      "reportName": "Report 17",
+      "claimTypeId": "d3b07384-d9a1-4f3b-8a1d-2b9b8a5e6f7e",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "transactAt": "2025-01-25T15:46:59.205Z",
+      "claimAmount": 612.59,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-17",
+              "label": "Field Label 17",
+              "type": "TEXT",
+              "value": "Value 17"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-18",
+              "label": "Field Label 18",
+              "type": "NUMBER",
+              "value": 51
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-42661417400018",
+      "employeeId": "619867e3d9912200079f2a10",
+      "reportName": "Report 18",
+      "claimTypeId": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "claimAmount": 713.24,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-18",
+              "label": "Field Label 18",
+              "type": "TEXT",
+              "value": "Value 18"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-19",
+              "label": "Field Label 19",
+              "type": "NUMBER",
+              "value": 80
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-42661417400019",
+      "employeeId": "6198838bd9912200079f2a13",
+      "reportName": "Report 19",
+      "claimTypeId": "d3b07384-d9a1-4f3b-8a1d-2b9b8a5e6f7e",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "transactAt": "2025-01-25T15:46:59.206Z",
+      "startDate": "2025-01-07T15:46:59.206Z",
+      "endDate": "2025-01-08T15:46:59.206Z",
+      "numberOfDays": 18,
+      "claimAmount": 145.24,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-19",
+              "label": "Field Label 19",
+              "type": "TEXT",
+              "value": "Value 19"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-20",
+              "label": "Field Label 20",
+              "type": "NUMBER",
+              "value": 65
+          }
+      ]
+  },
+  {
+      "id": "123e4567-e89b-12d3-a456-42661417400020",
+      "employeeId": "61dd0691c93464000815c5b0",
+      "reportName": "Report 20",
+      "claimTypeId": "a1b2c3d4-e5f6-7a8b-9c0d-e1f2a3b4c5d6",
+      "attachments": [
+        {
+            "id": "att-001",
+            "name": "receipt1.pdf",
+            "fileSize": 1024,
+            "fileType": "application/pdf",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/receipt1.pdf"
+        },
+        {
+            "id": "att-002", 
+            "name": "invoice.jpg",
+            "fileSize": 2048,
+            "fileType": "image/jpeg",
+            "uploadedAt": "2025-01-25T15:46:59.204Z",
+            "url": "https://example.com/files/invoice.jpg"
+        } 
+      ],
+      "claimAmount": 598.81,
+      "customFields": [
+          {
+              "isMandatory": true,
+              "key": "field-key-20",
+              "label": "Field Label 20",
+              "type": "TEXT",
+              "value": "Value 20"
+          },
+          {
+              "isMandatory": false,
+              "key": "field-key-21",
+              "label": "Field Label 21",
+              "type": "NUMBER",
+              "value": 44
+          }
+      ]
+  }
+]

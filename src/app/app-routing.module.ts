@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { ClaimComponent } from './claim/claim.component';
+
+const routes: Routes = [
+  {
+    path: '',
+    component: ClaimComponent,
+    title: 'Claim Management'
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
