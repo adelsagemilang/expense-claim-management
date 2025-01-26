@@ -15,7 +15,7 @@ import { Claim } from '@app/shared/interfaces/claim.interface';
     ClaimFormComponent
   ],
   templateUrl: './claim.component.html',
-  styleUrls: ['./claim.component.scss'],
+  styles: []
 })
 export class ClaimComponent {
   @ViewChild(ClaimFormComponent) claimFormComponent!: ClaimFormComponent;
